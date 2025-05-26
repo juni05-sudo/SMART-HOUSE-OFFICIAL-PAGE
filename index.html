@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+  <title>SMART HOUSE</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+
+
+
+
+
+  
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  header {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #dff9fb;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo header.png" alt="Logo">
+      SMART HOUSE
+    </div>
+    
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <div class="intro-texto">
+      <h1>¡Hola! Somos los chicos de <span class="resaltado">6to 1ra Tecip</span></h1>
+      <p>Un grupo de estudiantes comprometidos con la tecnología, la innovación y los desafíos reales del mundo digital. Desde la Escuela Técnica N°4 de Moreno, desarrollamos proyectos con pasión, creatividad y trabajo en equipo.</p>
+    </div>
+  </section>
+
+
+<style>
+  .intro {
+    background: #f0f9ff;
+    padding: 60px 40px;
+    text-align: center;
+  }
+
+  .intro-texto h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  .intro-texto p {
+    font-size: 1.2em;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto 25px;
+  }
+
+  .resaltado {
+    color: #1976d2;
+    font-weight: bold;
+  }
+
+  .boton {
+    display: inline-block;
+    background: #1976d2;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+
+  .boton:hover {
+    background: #0d47a1;
+  }
+</style>
+
+
+<section class="proyecto">
+  <div class="contenedor-proyecto">
+    <h2> Proyecto: Smart House – Control Domótico por Voz</h2>
+    <p>
+      Nuestro proyecto de <strong>Smart House</strong> consiste en el desarrollo de una casa domótica controlada por <strong>comandos de voz</strong>, pensada para facilitar la vida cotidiana mediante la integración de tecnologías accesibles y eficientes.
+    </p>
+    <p>
+      Diseñamos una <strong>aplicación móvil</strong> con <strong>MIT App Inventor</strong> que se comunica por <strong>Bluetooth</strong> con un <strong>Arduino UNO</strong>. Esta app reconoce comandos de voz y los traduce en instrucciones que el Arduino interpreta para activar funciones del prototipo.
+    </p>
+    <ul>
+      <li><strong>“Encender Luces”</strong> ➝ Envía la instrucción <strong>A</strong> ➝ Arduino enciende las luces.</li>
+      <li><strong>“Apagar Luces”</strong> ➝ Envía la instrucción <strong>B</strong> ➝ Arduino apaga las luces.</li>
+    </ul>
+    <p>
+      Este sistema ofrece una solución funcional, inalámbrica y escalable, ideal para futuras viviendas inteligentes. 
+    </p>
+
+    <h3>Imágenes de referencia</h3>
+    <div class="carrusel">
+      <button class="flecha izquierda" aria-label="Imagen anterior">&#10094;</button>
+      
+      <div class="imagenes">
+        <img src="modelo smart house.png" alt="Prototipo de la casa domótica" class="visible">
+        <img src="aplicaion.png" alt="App de control por voz en MIT App Inventor">
+        <img src="arduino ejemplo.png" alt="Arduino conectado con el sistema de luces">
+      </div>
+
+      <button class="flecha derecha" aria-label="Imagen siguiente">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .proyecto {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  .contenedor-proyecto {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .contenedor-proyecto h2 {
+    font-size: 2em;
+    color: #1976d2;
+    margin-bottom: 20px;
+  }
+
+  .contenedor-proyecto h3 {
+    font-size: 1.5em;
+    color: #444;
+    margin: 40px 0 20px;
+  }
+
+  .contenedor-proyecto p, .contenedor-proyecto ul {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .contenedor-proyecto ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .contenedor-proyecto li::before {
+    content: "• ";
+    color: #1976d2;
+    font-weight: bold;
+  }
+
+  /* Carrusel */
+  .carrusel {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    user-select: none;
+  }
+
+  .imagenes img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .imagenes img.visible {
+    display: block;
+  }
+
+  .flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(25, 118, 210, 0.8);
+    border: none;
+    color: white;
+    font-size: 2.5em;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+    transition: background-color 0.3s;
+  }
+
+  .flecha:hover {
+    background-color: rgba(25, 118, 210, 1);
+  }
+
+  .flecha.izquierda {
+    left: -40px;
+  }
+
+  .flecha.derecha {
+    right: -40px;
+  }
+
+  @media (max-width: 768px) {
+    .flecha.izquierda {
+      left: 5px;
+    }
+    .flecha.derecha {
+      right: 5px;
+    }
+  }
+</style>
+
+<script>
+  const imgs = document.querySelectorAll('.imagenes img');
+  const btnIzq = document.querySelector('.flecha.izquierda');
+  const btnDer = document.querySelector('.flecha.derecha');
+  let index = 0;
+
+  function mostrarImagen(indice) {
+    imgs.forEach((img, i) => {
+      img.classList.toggle('visible', i === indice);
+    });
+  }
+
+  btnDer.addEventListener('click', () => {
+    index = (index + 1) % imgs.length;
+    mostrarImagen(index);
+  });
+
+  btnIzq.addEventListener('click', () => {
+    index = (index - 1 + imgs.length) % imgs.length;
+    mostrarImagen(index);
+  });
+
+  // Mostrar la primera imagen al cargar
+  mostrarImagen(index);
+</script>
+
+
+
+
+
+<section class="objetivo">
+  <div class="contenedor-objetivo">
+    <h2>🎯 Nuestro Objetivo</h2>
+    <p>
+      En un mundo donde la tecnología avanza a pasos agigantados, creemos firmemente que su verdadero valor se encuentra en su capacidad de <strong>mejorar la vida de las personas</strong>. Desde nuestro lugar como estudiantes de 6to 1ra Tecip, nos propusimos un desafío: <em>crear una solución accesible, funcional y significativa</em>, sin importar las condiciones sociales, económicas o físicas de quienes la utilicen.
+    </p>
+
+    <p>
+      Así nació nuestra <strong>Smart House</strong>: una casa domótica diseñada para facilitar el día a día a través del <span class="resaltado">control por voz</span>. Pensamos en aquellos que enfrentan dificultades de movilidad, adultos mayores, personas con discapacidades o simplemente quienes buscan mayor comodidad y autonomía en su hogar.
+    </p>
+
+    <p>
+      Nuestra meta no es solo desarrollar un proyecto innovador, sino también transmitir un mensaje claro: <strong>la tecnología debe ser una herramienta al servicio de todos</strong>. Queremos demostrar que, con creatividad, compromiso y trabajo en equipo, es posible construir soluciones reales que tengan un impacto positivo y directo en la sociedad.
+    </p>
+
+    <p class="frase-final">
+      Porque cuando la tecnología es inclusiva, no tiene límites. 💡
+    </p>
+  </div>
+</section>
+
+<style>
+  .objetivo {
+    background: #f0f8ff;
+    padding: 60px 40px;
+    text-align: center;
+  }
+
+  .contenedor-objetivo {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .contenedor-objetivo h2 {
+    font-size: 2em;
+    color: #1976d2;
+    margin-bottom: 20px;
+  }
+
+  .contenedor-objetivo p {
+    font-size: 1.15em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .resaltado {
+    color: #00a8ff;
+    font-weight: bold;
+  }
+
+  .frase-final {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #1976d2;
+    margin-top: 30px;
+  }
+</style>
+
+
+
+
+<section class="video-demo">
+  <div class="contenedor-video">
+    <h2>📽️ Demostración en Video</h2>
+    <p>
+      A continuación, te mostramos un ejemplo real del funcionamiento de nuestra <strong>Smart House</strong>. En este video podés ver cómo, a través de comandos de voz desde una aplicación móvil, se controlan las luces de manera instantánea y eficiente.
+    </p>
+
+    <!-- Video de YouTube (podés reemplazar el enlace con el tuyo) -->
+    <div class="video-responsive">
+      <iframe src="https://www.youtube.com/embed/Pf5BCa1gs2w" 
+              title="Demostración Smart House"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<style>
+  .video-demo {
+    background: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+  }
+
+  .contenedor-video {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .contenedor-video h2 {
+    font-size: 2em;
+    color: #1976d2;
+    margin-bottom: 20px;
+  }
+
+  .contenedor-video p {
+    font-size: 1.15em;
+    color: #444;
+    margin-bottom: 30px;
+  }
+
+  .video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+
+<section class="cierre-final">
+  <div class="cierre-contenido">
+    <h2>💬 Palabras Finales</h2>
+    <p>
+      Este proyecto no es solo un trabajo técnico: es una muestra de lo que podemos lograr cuando un grupo de jóvenes se une con un propósito claro. Agradecemos la oportunidad de mostrar nuestro compromiso, nuestra creatividad y nuestras ganas de transformar el mundo desde la tecnología.
+    </p>
+    <p class="firma">– Equipo de 6to 1ra Tecip</p>
+  </div>
+</section>
+
+<style>
+  .cierre-final {
+    background: #f9f9f9;
+    padding: 60px 40px;
+    text-align: center;
+  }
+
+  .cierre-contenido {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .cierre-contenido h2 {
+    color: #1976d2;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .cierre-contenido p {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 15px;
+  }
+
+  .firma {
+    font-style: italic;
+    color: #00a8ff;
+  }
+</style>
+
+
+
+
+<section class="equipo">
+  <div class="contenedor-equipo">
+    <h2>👥 Participantes del Proyecto</h2>
+    <div class="lista-equipo">
+      <div class="miembro">
+        <h3>Rafael Bosso</h3>
+        <p>Docente guía</p>
+      </div>
+      <div class="miembro">
+        <h3>Luca Perez</h3>
+        <p>Alumno</p>
+      </div>
+      <div class="miembro">
+        <h3>Baez Juan Cruz</h3>
+        <p>Alumno</p>
+      </div>
+      <div class="miembro">
+        <h3>Cid Fabiola</h3>
+        <p>Alumna</p>
+      </div>
+      <div class="miembro">
+        <h3>Santiago Suarez</h3>
+        <p>Alumno</p>
+      </div>
+      <div class="miembro">
+        <h3>Juan Cruz Warle</h3>
+        <p>Alumno</p>
+      </div>
+      <div class="miembro">
+        <h3>Maximo Molina</h3>
+        <p>Alumno</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .equipo {
+    background: #f1f9ff;
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .contenedor-equipo {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .equipo h2 {
+    font-size: 2em;
+    color: #1976d2;
+    margin-bottom: 40px;
+  }
+
+  .lista-equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .miembro {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    padding: 20px 25px;
+    width: 220px;
+    transition: transform 0.3s;
+  }
+
+  .miembro:hover {
+    transform: translateY(-5px);
+  }
+
+  .miembro h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+  }
+
+  .miembro p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 0.95em;
+  }
+</style>
+
+
+
+
+<footer class="footer">
+  <div class="footer-contenido">
+    <p>🔧 Proyecto desarrollado por los estudiantes de <strong>6to 1ra Tecip</strong> – Escuela Técnica N.º 4 de Moreno.</p>
+    <p>Gracias por visitar nuestro proyecto Smart House. ¡La innovación empieza con una idea y se construye en equipo!</p>
+    <p class="copy">&copy; 2025 Smart House | Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+  }
+
+  .footer-contenido p {
+    margin: 10px 0;
+    font-size: 1em;
+  }
+
+  .footer .copy {
+    font-size: 0.9em;
+    color: #e0f7fa;
+    margin-top: 15px;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
